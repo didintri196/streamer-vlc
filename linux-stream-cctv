@@ -1,0 +1,1 @@
+cvlc -vvv rtsp://admin:12345hik@192.168.0.77:554/Streaming/Channels/1 --ttl 60 --sout '#duplicate{dst=std{access=http,mux=ts,dst=[::]:3013}",dst=std{access=udp,mux=ts,dst=ffe2::1]:2013},dst=std{access=livehttp{seglen=5,delsegs=true,numsegs=5,index=stream.m3u8,index-url=stream-########.ts},mux=ts{use-key-frames},dst=stream-########.ts}}}'

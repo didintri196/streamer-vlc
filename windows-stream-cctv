@@ -1,0 +1,1 @@
+vlc -I dummy rtsp://admin:12345hik@192.168.7.227/Streaming/Channels/1 :sout=#std{access=livehttp{seglen=5,delsegs=true,numsegs=10,index=camera.m3u8,index-url=http://36.89.38.193/streamer/camera-########.ts},mux=ts{use-key-frames},dst=camera-########.ts}}
